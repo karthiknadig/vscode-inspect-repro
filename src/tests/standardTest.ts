@@ -20,7 +20,7 @@ async function start() {
     console.log(`Starting vscode ${channel} with args ${launchArgs.join(' ')}`);
     await runTests({
         extensionDevelopmentPath: extensionDevelopmentPath,
-        extensionTestsPath: path.join(EXTENSION_ROOT_DIR_FOR_TESTS, 'out', 'test'),
+        extensionTestsPath: path.join(EXTENSION_ROOT_DIR_FOR_TESTS, 'out', 'tests'),
         launchArgs,
         version: channel,
         extensionTestsEnv: { ...process.env, UITEST_DISABLE_INSIDERS: '1' },

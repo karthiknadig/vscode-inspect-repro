@@ -29,7 +29,7 @@ type SetupOptions = Mocha.MochaOptions & {
 };
 
 /**
- * Configure the test environment and return the optoins required to run moch tests.
+ * Configure the test environment and return the options required to run mocha tests.
  *
  * @returns {SetupOptions}
  */
@@ -67,9 +67,8 @@ function configure(): SetupOptions {
     // changed by setting env var `MOCHA_FILE` (we do this in our CI).
     if (MOCHA_REPORTER_JUNIT) {
         options.reporter = 'mocha-multi-reporters';
-        const reporterPath = path.join(__dirname, 'common', 'exitCIAfterTestReporter.js');
         options.reporterOptions = {
-            reporterEnabled: `spec,mocha-junit-reporter,${reporterPath}`,
+            reporterEnabled: `spec,mocha-junit-reporter`,
         };
     }
 
