@@ -50,4 +50,5 @@ jobs:
 
       - name: Run Tests
         uses: GabrielBB/xvfb-action@v1.5
-        run: npm run runTest
+        with:
+          run: npm run runTest
