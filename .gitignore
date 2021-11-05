@@ -1,0 +1,26 @@
+**/.vscode-test/**
+**/.vscode test/**
+**/.vscode-smoke/**
+**/.venv*/
+**/out/**
+**/bin/**
+**/obj/**
+**/node_modules
+**/coverage/
+**/.nyc_output
+**/*.log
+*.pyc
+*.vsix
+**/__pycache__/**
+out
+log.log
+**/node_modules
+*.pyc
+*.vsix
+**/.vscode/.ropeproject/**
+**/testFiles/**/.cache/**
+*.noseids
+**/.vs/
+.python-version
+.venv
+**/.DS_Store
