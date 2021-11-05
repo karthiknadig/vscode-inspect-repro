@@ -42,6 +42,7 @@
     "main": "./out/extension",
     "scripts": {
         "compile": "tsc -watch -p ./",
+        "build": "tsc -p ./",
         "package": "vsce package",
         "runTest": "node ./out/test/testBootstrap.js ./out/test/standardTest.js"
     },
