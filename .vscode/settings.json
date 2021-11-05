@@ -1,0 +1,45 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/node_modules": true,
+        "**/*.pyc": true,
+        "**/.nyc_output": true,
+        "**/out": true,
+        "**/obj": true,
+        "**/bin": true,
+        ".vscode-test": true,
+        ".vscode test": true
+    },
+    "search.exclude": {
+        "**/out": true, // set this to false to include "out" folder in search results
+        "**/node_modules": true,
+        "**/coverage": true,
+        ".vscode-test": true,
+        ".vscode test": true
+    },
+    "[python]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[JSON]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "[YAML]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "typescript.tsdk": "./node_modules/typescript/lib"
+}
